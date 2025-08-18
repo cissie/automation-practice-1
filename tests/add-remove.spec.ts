@@ -13,8 +13,8 @@ test('should load Add/Remove Elements page', async ({ page }) => {
 
 test('should add and remove elements', async({ page }) => {
 
-  const addElementButton = page.getByRole('button', {name: 'Add Element'})
-  const deleteButton = page.getByRole('button', {name: "Delete"})
+  const addElementButton = page.getByRole('button', {name: 'Add Element'});
+  const deleteButton = page.getByRole('button', {name: "Delete"});
 
   // Add Element button is visible
   await expect(addElementButton).toBeVisible();
@@ -27,4 +27,6 @@ test('should add and remove elements', async({ page }) => {
   //Delete button is no longer visible
   await expect(deleteButton).not.toBeVisible();
 
-})
+});
+
+// TODO Add test to add multiple elements and remove them one by one
