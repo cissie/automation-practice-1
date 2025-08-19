@@ -1,6 +1,5 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
-
 export class AddRemovePage {
   readonly page: Page;
   readonly addElementButton: Locator;

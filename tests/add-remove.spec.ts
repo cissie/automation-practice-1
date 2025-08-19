@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { AddRemovePage } from '../pages/addRemovepage';
+import { AddRemovePage } from '../pages/add-remove-page';
 
 test.describe('Add/Remove Elements Tests', () => {  
   let addRemovePage: AddRemovePage;
